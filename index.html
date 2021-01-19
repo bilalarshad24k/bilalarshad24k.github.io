@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Airport Taxi Service</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5631a5be5b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- This Is Header ALL the content of Header is Structured Here-->
+    <div class="header">
+        <div class="flexItem logo">
+            <img src="Media/Subtraction 7.svg" alt="Logo">
+            <p>Airport Taxi Service</p>
+        </div>
+        <div class="flexItem navigationBar">
+            <ul>
+                <li class="menu"><a class="home" href="file:///D:/Digi%20Div/Airport%20Taxi%20Service/ATS.html">HOME</a></li>
+                <li class="menu"><a href="#">Q&A</a></li>
+                <li class="menu"><a href="#">T&C</a></li>
+                <li class="menu"><a href="#">CONTACT</a></li>
+                <li class="account"><img class="profilePic" src="Media/Ellipse 120.jpg" alt="Profile Picture"> <i class="fas fa-chevron-down"></i></li>
+            </ul>
+        </div>
+    </div>
+    <!--END Of Header Here -->
+    <!--This Is Our First Section With Contact Form -->
+
+    <div class=" Row Row1">
+        <div class="content">
+            <h1>AirportTaxi Service</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra maximus auctor. Nullam dignissim pretium leo quis vulputate. Ut non gravida ligula. Duis quis condimentum eros. Aenean enim urna, ultricies in lacus in, bibendum
+                gravida elit. Nam tempor, neque a vulputate consectetur, est sem tempor diam, eget rhoncus elit nulla.</p>
+            <h2>ONWARD TRAVEL SOLUTIONS</h2>
+            <div class="contactDetails">
+                <div class="cell"><i class="fas fa-phone-alt"></i>
+                    <p>0300 *******</p>
+                </div>
+                <div class="UAN"><i class="fas fa-globe"></i>
+                    <p>+1 2026 334</p>
+                </div>
+            </div>
+        </div>
+        <div class="bookingForm">
+            <img class="ring ring1" src="Media/white ellipse.png" alt="image" width="60px" height="60px">
+            <img class="ring ring2" src="Media/white ellipse.png" alt="image" width="60px" height="60px">
+            <img class="ring ring3" src="Media/white ellipse.png" alt="image" width="60px" height="60px">
+            <img class="ring ring4" src="Media/white ellipse.png" alt="image" width="60px" height="60px">
+            <h2>Book Now</h2>
+            <form>
+                <div class="inputDiv">
+                    <label for="fromLoc">PickUp:</label>
+                    <div class="inputBox pickup">
+                        <i class="icon fa fa-map-marker" aria-hidden="true"></i>
+                        <input type="text" class="inputField" id="fromLoc" name="fromLoc" placeholder="PickUp point">
+                    </div>
+                </div>
+
+                <div class="inputBox Xchangeholder">
+                    <i class="fa fa-exchange icon iconXchange" aria-hidden="true"></i>
+                </div>
+                <div class="inputDiv destination">
+                    <label for="toLoc">Destination:</label>
+                    <div class="inputBox dropOff">
+                        <i class="icon fa fa-map-marker" aria-hidden="true"></i>
+                        <input type="text" class="inputField" id="toLoc" name="toLoc" placeholder="Destination point">
+                    </div>
+                </div>
+                <div class="FPL">
+                    <div class="inputDiv Fleet">
+                        <label for="fleet">Fleet:</label>
+                        <div class="inputBox">
+                            <i class="fa fa-car icon" aria-hidden="true"></i>
+                            <select class="inputField" name="fleet" id="carFleet">
+                            <option value="Economy">Economy</option>
+                            <option value="Average">Average</option>
+                            <option value="Luxury">Luxury</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inputDiv passngr">
+                        <label for="passenger">Passengers:</label>
+                        <div class="inputBox">
+                            <i class="fa fa-user icon" aria-hidden="true"></i>
+                            <input class="inputField" type="number" placeholder="0" size="1" id="Passngr" name="passenger" min="1" max="5">
+                        </div>
+                    </div>
+                    <div class="inputDiv lugg">
+                        <label for="luggage">Luggage:</label>
+                        <div class="inputBox">
+                            <i class="fa fa-suitcase icon" aria-hidden="true"></i>
+                            <input class="inputField" placeholder="0" type="number" size="2" id="Luggage" name="luggage" min="1" max="30">
+                        </div>
+                    </div>
+                </div>
+                <div class="dateNtime dNt1">
+                    <div class="inputDiv date">
+                        <label for="date">Date:</label>
+                        <div class="inputBox">
+                            <i class="fa fa-calendar icon" aria-hidden="true"></i>
+                            <input class="inputField" type="date" name="date" value="2020-10-31" min="2020-10-31" max="2090-12-31">
+                        </div>
+                    </div>
+                    <div class="inputDiv time">
+                        <label for="time">Time:</label>
+                        <div class="inputBox">
+                            <i class="fa fa-clock-o icon" aria-hidden="true"></i>
+                            <input class="inputField" type="time" name="time" value="12:00">
+                        </div>
+                    </div>
+                </div>
+                <div class="inputBox switchButton">
+                    <h5>Return:</h5>
+                    <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                          </label>
+                </div>
+                <div class="dateNtime dNt2">
+                    <div class="inputDiv date">
+                        <label for="date">Date:</label>
+                        <div class="inputBox">
+                            <i class="fa fa-calendar icon" aria-hidden="true"></i>
+                            <input class="inputField" type="date" name="date" value="2020-10-31" min="2020-10-31" max="2090-12-31">
+                        </div>
+                    </div>
+                    <div class="inputDiv time">
+                        <label for="time">Time:</label>
+                        <div class="inputBox">
+                            <i class="fa fa-clock-o icon" aria-hidden="true"></i>
+                            <input class="inputField" type="time" name="time" value="12:00">
+                        </div>
+                    </div>
+                </div>
+                <div class="inputBox buttons">
+                    <input class="loginButton" type="submit" value="Login">
+                    <input class="qouteButton" type="submit" value="Quote">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--That Marks the End of Our First Row ,Now we'll begin writing HTML for sseond Row-->
+
+    <div class="Row Row2">
+        <div class="content2">
+            <h1>TAXI TRANSFERS TO AND FROM ALL UK AIRPORTS</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra maximus auctor. Nullam dignissim pretium leo quis vulputate. Ut non gravida ligula. Duis quis condimentum eros. Aenean enim urna, ultricies in lacus in, bibendum
+                gravida elit. Nam tempor, neque a vulputate consectetur, est sem tempor diam, eget rhoncus elit nulla.</p>
+            </br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra maximus auctor. Nullam dignissim pretium leo quis vulputate. Ut non gravida ligula. Duis quis condimentum eros. Aenean enim urna, ultricies in lacus in, bibendum
+                gravida elit. </p>
+            </br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra maximus auctor. Nullam dignissim pretium leo quis vulputate. Ut non gravida ligula.</p>
+            <img class="ring ring1" src="Media/Ellipse 51.png" alt="Image" width="60px" height="60px">
+            <img class="ring ring2" src="Media/Ellipse 51.png" alt="Image" width="60px" height="60px">
+            <img class="ring ring3" src="Media/Ellipse 51.png" alt="Image" width="60px" height="60px">
+            <img class="ring ring4" src="Media/Ellipse 51.png" alt="Image" width="60px" height="60px">
+        </div>
+        <div class="infoBoxes">
+            <div class="infBox">
+                <img src="Media/Icon awesome-medal.png" alt="icon">
+                <h2>TRAINED DRIVERS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus iaculis feugiat. Phasellus.</p>
+            </div>
+            <div class="infBox">
+                <img src="Media/Icon awesome-headset.png" alt="icon">
+                <h2>QUALITY SUPPORT</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus iaculis feugiat. Phasellus.</p>
+            </div>
+            <div class="infBox">
+                <img src="Media/Icon payment-cash.png" alt="icon">
+                <h2>LOW PRICES</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus iaculis feugiat. Phasellus.</p>
+            </div>
+            <div class="infBox">
+                <img src="Media/clock.svg" alt="icon">
+                <h2>FLIGHT MONITORING</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus iaculis feugiat. Phasellus.</p>
+            </div>
+        </div>
+    </div>
+    <!-- End of Row-->
+    <!---Start Of Row 3-->
+    <div class="Row Row3">
+
+        <div class="content content3">
+            <h1>Extensive Fleet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra maximus auctor. Nullam dignissim pretium leo quis vulputate. Ut non gravida ligula. Duis quis condimentum eros. Aenean enim urna, ultricies in lacus in, bibendum
+                gravida elit. Nam tempor, neque a vulputate consectetur, est sem tempor diam, eget rhoncus elit nulla.</p>
+            </br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra maximus auctor. Nullam dignissim pretium leo quis vulputate. Ut non gravida ligula. Duis quis condimentum eros. Aenean enim urna, ultricies in lacus in, bibendum
+                gravida elit. Nam tempor, neque a vulputate consectetur, est sem tempor diam, eget rhoncus elit nulla.</p>
+        </div>
+        <div class="ourFleet">
+            <h1>Our Fleet</h1>
+            <img src="Media/NoPath - Copy (6).png" alt="Car Image" width="350px">
+            <p><span style="color:#000733; font-weight:600;">Executive Car:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed magna eleifend imperdiet. Proin vestibulum ipsum sit amet orci facilisis, vitae cursus turpis semper.
+                Nam ut vestibulum lacus, in elementum leo. </p>
+            <div class="navArrows">
+                <i class="fas fa-chevron-left"></i>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="paginationButtons">
+                <div class="navDot">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <img class="ring ring1" src="Media/white ellipse.png" alt="image" width="60px" height="60px">
+            <img class="ring ring2" src="Media/white ellipse.png" alt="image" width="60px" height="60px">
+            <img class="ring ring3" src="Media/white ellipse.png" alt="image" width="60px" height="60px">
+            <img class="ring ring4" src="Media/white ellipse.png" alt="image" width="60px" height="60px">
+        </div>
+        <div class="navDot1">
+            <span class="dotm"></span>
+            <span class="dotm"></span>
+            <span class="dotm"></span>
+            <span class="dotm"></span>
+            <span class="dotm"></span>
+            <span class="dotm"></span>
+            <span class="dotm"></span>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li class="footMenu"><a href="#">Privacy Policy</a></li>
+            <li class="footMenu"><a href="#">Towns</a></li>
+            <li class="footMenu"><a href="#">Usage Policy</a></li>
+            <li class="footMenu"><a href="#">Drivers</a></li>
+            <li class="footMenu"><a href="#">Cookie Policy</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
