@@ -1,0 +1,705 @@
+/* In this document I am going to implement a zeplin design using HTML/CSS 
+
+We'll mainly focus on flexbox in this design*/
+
+
+body{
+    margin:0;
+}
+/*   Below is the Styling of Header*/
+*{box-sizing:border-box;}
+.header{
+    display:flex;
+    flex-wrap:wrap;
+    padding:0 15%;
+    justify-content:space-between;
+}
+.logo img{
+    width:18%;
+}
+.header>.logo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /*margin-left:12%;*/
+}
+.logo p{
+    font-family:sen,Arial,sans-serif;
+    font-weight:800;
+    color:#000733;
+    font-size:20px;
+    text-alignment:left;
+    padding:0 10px;
+}
+.navigationBar{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    /*margin-right:12%;*/
+}
+.navigationBar ul{
+    list-style-type:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.menu a{
+    font-family:roboto,Arial,sans-serif;
+    font-weight:400;
+    font-size:16px;
+    /*line-height:22px;*/
+    color:#000733;
+    text-decoration:none;
+    padding:0 20px 15px 20px;
+}
+.account{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:0 30px;
+    /*margin-left:20px;*/
+}
+.account img{
+    object-fit:contain;
+    width:50%;
+}
+.home{
+    border-bottom:solid 6px #000733;
+}
+.fa-chevron-down{
+    padding:0 5px;
+    color:#000733;
+    cursor:pointer;
+}
+/*---------------------------------------End Of Header Styling.. For your convinence any styles for header must be placed above ----------------------------------------------------------------------------------------*/
+
+
+
+/*------------------------ Styling of first section of page:below Header--------- */
+.Row{
+    max-width:100%;
+} 
+.Row1{
+    margin-top:-3px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:flex-start;
+    background-image:url(Media/Mask\ Group\ 14.jpg);
+    background-position:center bottom;
+    background-size:cover;
+    padding:6% 15%;
+}
+.content{
+    display:flex;
+    flex-direction:column;
+    margin:5% 5% 0 5%;
+    flex-basis:40%;
+}
+.content h1{
+    font-family:Roboto , Arial , sans-serif;
+    font-weight:600;
+    font-size:2.0625rem;
+    text-align:left;
+    color:#ffffff;
+    letter-spacing:0.015em;
+}
+.content p,.content2 p{
+    font-family:roboto,arial,sans-serif;
+    font-weight:400;
+    color:#b4b4b4;
+}
+.content h2,.content2 h1{
+    font-family:Roboto , Arial , sans-serif;
+    font-weight:300;
+    color:#ffffff;
+}
+.contactDetails{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin:0;
+}
+.cell, .UAN{
+    justify-content:center;
+    align-items:center;
+    padding:5px;
+    display:flex;
+    margin-top:-30px;
+}
+.fa-globe , .fa-phone-alt{
+    color:#ffffff;
+    font-size:25px;
+    text-align:left;
+}
+.cell p, .UAN p{
+    padding:10px;
+    color:#ffffff;
+    font-size:20px;
+    font-family: Roboto, Arial , sans-serif;
+    text-align:left;
+}
+/*Styling of Booking Form */
+form{
+    display:flex;
+    flex-direction: column;
+    row-gap:20px;
+    width:100%;
+}
+.bookingForm{
+ 
+    padding:2%;
+    background:#ffffff;
+    flex-basis:45%;
+    margin:3% 0 7% 0;
+    position:relative;
+    max-width:100%;
+}
+
+.bookingForm h2{
+ color:#000733;
+ font-family:Sen, arial, sans-serif;
+ font-size:35px;
+ font-weight:700;
+ line-height:40px;
+}
+.inputBox{
+    display:flex;
+}
+.inputDiv{
+    width:100%;
+}
+label{
+    font-family: Roboto,Arial,sans-serif;
+    font-size:12px;
+    color:#b4b4b4;
+
+}
+.icon{    
+    padding:10px;
+    color:#b4b4b4;
+    border-bottom:1px solid #b4b4b4;
+    font-size:16px;
+}
+.Xchangeholder{
+    display:flex;
+    justify-content:flex-end;}
+.iconXchange{
+    border:none;
+    transform:rotate(90deg);
+}
+.destination{
+    margin-top:-50px;
+}
+.inputField{
+    padding:10px;
+    border:none;
+    border-bottom:1px solid #b4b4b4;
+    outline:none;
+    width:100%;
+}
+input:focus::placeholder{
+    color:transparent;
+}
+.FPL{
+ display:flex; 
+ column-gap:5px;
+ align-items: center;
+}
+.Fleet{
+   width: 50%;
+}
+.passngr , .lugg{
+    width: 25%;
+}
+.dateNtime{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:5px;
+    /*margin-bottom:20px;*/
+}
+.dNt1{
+    margin-bottom:-20px;
+}
+.dNt2{
+    margin-top:-30px;
+}
+#Passngr, #Luggage  {   /*For making space between spin buttons and numbers */
+    padding-right: 2px;
+}
+.date,.time{
+    /*width:100%;*/
+}
+input[type="time"],input[type="date"]{
+    position:relative;
+}
+input[type="time"]::-webkit-calendar-picker-indicator, input[type="date"]::-webkit-calendar-picker-indicator {
+    color:rgba(0,0,0,0);
+    outline:none;
+    background:none;
+    z-index:1;
+}
+input[type="time"]:before , input[type="date"]:after{
+    color: transparent;
+    background: none;
+    display: block;
+    font-family: 'FontAwesome';
+    content: '\f107';
+    cursor:pointer;
+    /* This is the calendar icon in FontAwesome */
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    right: 6px;
+    color: #000;
+}
+/*Styling of toggle button in Forms   */
+.switchButton{
+    align-items:center;
+    justify-content:flex-start;
+    gap:5px;
+    padding:0px;
+}
+.switchButton h5{
+    color:#606060;
+    font-family:Roboto,Arial,sans-serif;
+    font-size:16px;
+}
+.switch {
+    position: relative;
+    display: inline;
+    width: 40px;
+    height: 24px;
+  }
+
+/*.switch input { 
+    opacity: 1;
+    width: 0;
+    height: 0;
+  }*/
+
+  .slider {
+    border-radius:34px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+     background-color:#ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: " ";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius:50%;
+  }
+  
+  input:checked + .slider {
+    background-image: linear-gradient(to right, #f8c212 , #f8c212, #f8be13, #f8b216, #f89f1b, #f89c1c, #f89c1c);
+  }
+ /* 
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  */
+ 
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+/* End of toggle button styling*/
+
+/*Forms buttons styling*/
+.buttons{
+    display:flex;
+    column-gap:20px;
+    justify-content: space-evenly;
+    margin-bottom:40px;
+    
+}
+.loginButton , .qouteButton{
+    padding:15px 45px;
+    border:none;
+    width:50%;
+    cursor:pointer;
+    color:white;
+    font-family:Roboto,Arial,sans-serif;
+    font-size:16px;
+    font-weight:700;
+    outline:none;
+}
+.loginButton{
+    background:#000733;
+}
+.qouteButton{
+    background-image: linear-gradient(to left, #f8c212 , #f8c212, #f8be13, #f8b216, #f89f1b, #f89c1c, #f89c1c);
+}
+
+    /* Here We're Going to start Our Second Row. The styling of whole the second row is styled below*/
+
+.Row2{width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        align-items:center;
+        padding:150px 15%;
+    }
+.content2{
+    background:#000733;
+    padding:3%;
+    position:relative;
+    flex-basis:40%;
+}
+.content2 p,.content3 p{
+    font-size: 14px;
+}
+.content2 h1, .content3 h1{
+    font-size:26px;
+    line-height:32px;
+}
+.ring{
+    position:absolute;
+}
+.ring1{
+    top:-28px;
+    left:-28px;
+}
+.ring2{
+    top:-28px;
+    right:-28px;
+}
+.ring3{
+    bottom:-28px;
+    right:-28px;
+}
+.ring4{
+    bottom:-28px;
+    left:-28px;
+}
+.infoBoxes{
+    flex-basis:50%;
+    display:flex;
+    flex-wrap:wrap;
+    gap:50px;
+    /*grid-column-gap:30px;
+    grid-row-gap:50px;
+    grid-template-columns:40% 40%;*/
+    justify-content:center;
+    align-items:center;
+}
+.infBox{
+    width:calc(50% - 50px);
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.infBox img{
+    width:35px;
+}
+.infBox:nth-child(4) img{
+    width:28px;
+}
+.infBox h2{
+    font-family:Roboto,Arial, sans-serif;
+    font-weight:600;
+    font-size:18px;
+    line-height:22px;
+    color:#000733;
+    text-align:center;
+}
+.infBox p{
+    font-family:Roboto,Arial,sans-serif;
+    font-weight:400;
+    color:#606060;
+    text-align:left;
+    font-size:16px;
+    line-height:18px;
+}
+
+
+.Row3{
+    margin-top:-3px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:flex-start;
+    background-image:url(Media/Mask\ Group\ 20.jpg);
+   /* background-position:;*/
+    background-size:cover;
+    padding:10% 10%;
+}
+.content3{
+    padding:0 3%;
+    flex-basis:35%;
+}
+.ourFleet{
+    display:flex;
+    flex-basis:20%;
+    background:#ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:2%;
+    margin:2% 0 0 0;
+    position:relative;
+}
+.ourFleet h1{
+    font-family:sen , Arial , sans-serif;
+    color:#000733;
+    padding:20px;
+    text-align:center;
+    font-weight:800;
+    letter-spacing:0;
+}
+.ourFleet p{
+    font-family:Roboto,Arial,sans-serif;
+    font-size:14px;
+    color:#606060;
+    padding:20px;
+}
+.fa-chevron-left , .fa-chevron-right{
+    color:#000733;
+    border:solid 2px #000733;
+    border-radius:50%;
+    padding:5px 8px;
+    cursor:pointer;
+}
+.navArrows{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navDot{
+    padding:1.1rem;   
+}
+.dot,.dotm{
+    display:inline-block;
+    width: 5px;
+    height:5px;
+    border-radius:50%;
+    background-color:#606060;
+    padding:px;
+    margin:0 2.5px;
+    cursor:pointer;
+}.dot:nth-child(4){
+    width:6px;
+    height:6px;
+    background-color:#000733;
+}
+.dotm:nth-child(4){
+    width:6px;
+    height:6px;
+    background-color:#ffffff;
+}
+.navDot1{
+    margin:8% 10% 0 10%;
+}
+.footer{
+    background:#000733;
+
+}
+.footer ul{
+    list-style-type:none;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    margin:10px 0 0 0;
+}
+.footMenu li{
+    margin:0 10px;
+    padding:50px 0;
+}
+.footMenu a{
+  text-decoration:none;
+  font-family:sen,arial,sans-serif;
+  font-size:16px;
+  line-height:22px;
+  color:#ffffff;
+  margin:0 20px;
+}
+
+
+/* Here We're going to design our layout for Mobile and Tablets */
+
+/*  For Tablets  */
+
+@media only screen and (max-width:768px){
+/* Header Section Settings for Tablets*/
+    .header{
+        flex-direction:column;
+    }
+    .logo img{
+        width:8%;}
+    
+    /*End of header section Settings for tablets */
+
+    /******* First Row Setings Here for Tablets  ******/
+    .content{
+            flex:100%;
+        }
+        .ring{
+            width:2rem;
+            height:2rem;
+        }
+        .ring1{
+            top:-16px;
+            left:-16px;
+        }
+        .ring2{
+            top:-16px;
+            right:-16px;
+        }
+        .ring3{
+            bottom:-16px;
+            right:-16px;
+        }
+        .ring4{
+            bottom:-16px;
+            left:-16px;
+        }
+        .bookingForm{
+            flex:100%;
+            margin-bottom:5rem;
+        }
+/* End Of First Row Settings Here for Tablets */
+/* Settings for the Second Row on Tablet */
+.content2{
+    flex:100%;
+}
+.infoBoxes{
+    margin-top:3.125rem;
+    flex:100%;
+}
+/* End of Settings For Row 2 here */
+
+/*Row 3 Settings for Tablets are mentioned Below*/
+
+.content3{
+    flex:100%;
+}
+.ourFleet{
+    display:flex;
+    flex-direction:column;
+    flex:100%;
+    align-items:center;
+    justify-content: center;
+}
+.navDot{
+    left:42%;
+}
+}
+
+/****  End of Layout FOr Tablets...   ****/
+
+
+/******* Here We get the Layout for Mobile ******/
+
+@media only screen and (max-width:480px){
+/*Header Settings For Mobile */
+
+    .header{
+        position:relative;
+    }
+    .logo{
+        margin-left:-40px; }
+    .logo img{
+        width:14%;
+    }
+    .navigationBar ul{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        margin-left:-40px;
+    }
+    .navigationBar  ul>li{
+        margin-bottom:1.2rem;
+    }
+    .menu a:hover{
+        border:6px solid #000733;
+        padding:5px;
+    }
+
+    .home{
+        border:6px solid #000733;
+        padding:5px !important;
+    }
+    /*  End of Header Settings For Mobile */
+
+    /*Section 1|Row Settings for Mobile */
+    .Row{
+        padding:6% 3%;
+    }
+    .bookingForm,.dateNtime{
+        flex:100%;
+        flex-direction:column;
+    }
+    .FPL{
+        flex-direction:column;
+        width:100%;
+    }
+    .Fleet , .lugg , .passngr , .date , .time{
+        width:98%;
+    }
+   
+/* End OF Section 1|Row 1 Settings*/
+
+
+/*Below is defined the stylling of Section 2|Row 2*/ 
+.infoBoxes{
+    flex-direction:column;
+}
+/*End of Styling Of Section 2|Row 2*/
+
+/* Styling of Section 3|Row3*/
+
+.ring{display:none;}
+.ourFleet img{
+max-width:100%;
+}
+
+/*****  Styling of Footer ******/        
+.footer ul{
+        flex-direction:column;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .navArrows{
+        width:80%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width:300px){
+
+.buttons{
+    flex-wrap:wrap;
+}
+.loginButton , .qouteButton{
+    padding:10px 15px;
+    margin:10px;
+}
+
+}
