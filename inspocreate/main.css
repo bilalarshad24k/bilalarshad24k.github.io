@@ -29,11 +29,13 @@ input[type="color"]:focus,
 
 .form-control {
     border-right: 0px;
+    border-radius: 0px;
 }
 
 .search_icon {
     background: transparent;
     border-left: 0px;
+    border-radius: 0px;
 }
 
 .searchBox {
@@ -85,29 +87,35 @@ input[type="color"]:focus,
 
 .categSection {
     background-image: url(Media/Group\ 209.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 29px -85px;
+    background-position: 29px -105px;
 }
 
-.categItem {
+.categItem,
+.categItem :focus {
     text-align: center;
     outline: none;
     cursor: pointer;
-    padding: 12px;
-    margin: 0 5px;
-    box-shadow: 0 0 4.5px #424242;
-}
-
-.categItem:focus {
-    border: 1px solid #a93a8c;
-    background-color: rgba(169, 58, 140, 0.1);
+    padding: 9px;
+    margin: 0 10px;
+    object-fit: contain;
+    border-radius: 2px;
+    border: 1px solid #e0e3e7;
+    box-shadow: 0 6px 10px 0 rgba(131, 134, 163, .2) !important;
 }
 
 
 /*the section below will select the before pseudo element of "p" in focus state of element with class of "categItem" */
 
-.categItem:focus>p:before {
+.styleCategItem {
+    border: 1px solid #a93a8c;
+    background-color: rgba(169, 58, 140, 0.1);
+    border-radius: 3px;
+    box-shadow: none !important;
+}
+
+.styleCategItem>p:before {
     content: '\f00c';
     font-family: FontAwesome;
     font-size: 8px;
@@ -124,15 +132,27 @@ input[type="color"]:focus,
     margin: auto;
 }
 
+.slickSlider {
+    margin: 0 0 20px;
+}
 
-/* .slick-next:before, .slick-prev:before{
-  position: absolute;
-      top: 5px;
-  
-  }
-  .slick-next, .slick-prev {
-      top: 38%;
-      border-radius: 50%;
-      border: solid 2px red !important;
-      padding: 19px 19px !important;
-  } */
+.tabSection {
+    margin: 40px 0px;
+    gap: 30px;
+}
+
+.in-activ-tab span {
+    color: #5c5f64;
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+
+.activ-tab span {
+    color: #101727;
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+}
