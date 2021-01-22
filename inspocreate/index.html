@@ -164,7 +164,7 @@
     <!----------------------------------------------------------------------------------->
     <div class="container">
         <div class="row d-flex justify-content-center tabSection">
-            <div class="tab activ-tab">
+            <div class="tab in-activ-tab">
                 <span>Trending</span>
             </div>
             <div class="tab in-activ-tab">
@@ -174,7 +174,19 @@
                 <span>Company</span>
             </div>
         </div>
+    </div>
+    <!-- The section of code below is the  masonry Section using masonry.js library -->
 
+    <div class="grid">
+        <div class="grid-item">
+            <img src="Media/1.jpg" alt="A image">
+        </div>
+        <div class="grid-item grid-item--width2">
+            <img src="Media/2.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="Media/3.jpg">
+        </div>
     </div>
 
 
@@ -185,7 +197,9 @@
 
 
 
-    <!---------------------------------------------------------------------------------------->
+
+
+    <!----------------------------------------------------------------------------------------->
 
 
     <!--External Javascript File -->
@@ -212,7 +226,7 @@
     <!--------------------------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js " integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin=" anonymous "></script>
     <!--------------------------------->
-    <!-- slider demo script -->
+    <!-- Slick Slider script -->
     <!--------------------------------->
     <script type="text/javascript ">
         $('.slickSlider').slick({
@@ -223,6 +237,17 @@
             slidesToShow: 6,
             centerMode: true,
             variableWidth: true
+        });
+    </script>
+    <!--------------------------------------------------------------------------->
+    <!-- Masonry Js Library-->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+        var elem = document.querySelector('.grid');
+        var msnry = new Masonry(elem, {
+            // options
+            itemSelector: '.grid-item',
+            // columnWidth: 200
         });
     </script>
 </body>

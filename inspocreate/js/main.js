@@ -25,10 +25,10 @@ for (let i = 0; i < y.length; i++) {
 }
 
 function assignActivTabClass(event) {
-
-    if (event.currentTarget.classList.contains("in-activ-tab")) {
-        event.currentTarget.classList.add("activ-tab")
-    } else {
-
+    for (let i = 0; i < y.length: i++) {
+        if (y[i].event.currentTarget.classList.contains("activ-tab")) {
+            event.currentTarget.classList.remove("activ-tab")
+            event.currentTarget.classList.add("in-activ-tab")
+        } else {}
     }
-}
+    event.currentTarget.classList.add("activ-tab")
