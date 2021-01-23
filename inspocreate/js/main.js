@@ -24,11 +24,11 @@ for (let i = 0; i < y.length; i++) {
     y[i].addEventListener('click', assignActivTabClass)
 }
 
-function assignActivTabClass(event) {
-    for (let i = 0; i < y.length: i++) {
-        if (y[i].event.currentTarget.classList.contains("activ-tab")) {
-            event.currentTarget.classList.remove("activ-tab")
-            event.currentTarget.classList.add("in-activ-tab")
-        } else {}
-    }
-    event.currentTarget.classList.add("activ-tab")
+// function assignActivTabClass(event) {
+//     for (let i = 0; i < y.length: i++) {
+//         if (y[i].event.currentTarget.classList.contains("activ-tab")) {
+//             event.currentTarget.classList.remove("activ-tab")
+//             event.currentTarget.classList.add("in-activ-tab")
+//         } else {}
+//     }
+//     event.currentTarget.classList.add("activ-tab")
