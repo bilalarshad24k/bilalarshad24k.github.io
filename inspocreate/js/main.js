@@ -32,3 +32,9 @@ for (let i = 0; i < y.length; i++) {
 //         } else {}
 //     }
 //     event.currentTarget.classList.add("activ-tab")
+
+document.querySelector('.fa-heart').addEventListener('click', footerPostIconsEffect);
+
+function footerPostIconsEffect(event) {
+    document.getElementById('heart').style.color = 'red'
+}
