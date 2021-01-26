@@ -33,8 +33,13 @@ for (let i = 0; i < y.length; i++) {
 //     }
 //     event.currentTarget.classList.add("activ-tab")
 
-document.querySelector('.fa-heart').addEventListener('click', footerPostIconsEffect);
+var heart = document.querySelectorAll(".heart");
+console.log(`The Number of heart Emojis in the whole document ${heart.length}`)
 
-function footerPostIconsEffect(event) {
-    document.getElementById('heart').style.color = 'red'
+for (let i = 0; i < heart.length; i++) {
+    heart[i].addEventListener('click', redLikeButton)
+}
+
+function redLikeButton(event) {
+    event.currentTarget.classList.toggle('redHeart')
 }

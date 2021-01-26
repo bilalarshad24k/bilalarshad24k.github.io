@@ -231,7 +231,7 @@ input[type="color"]:focus,
 
 .grid {
     background: #ffffff;
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
     counter-reset: grid-item;
 }
@@ -258,17 +258,25 @@ input[type="color"]:focus,
     overflow: hidden;
     /* border: 2px solid #333;
     border-color: hsla(0, 0%, 0%, 0.5); */
-    border-radius: 5px !important;
+    border-radius: 4px;
 }
 
 .grid-item:hover {
     box-shadow: 0 6px 10px 0 rgba(131, 134, 163, .8)!important;
 }
 
+
+/* Design of Icons  */
+
 .post-footer-icons {
     margin: 0 5px;
     font-size: 12px;
     cursor: pointer;
+}
+
+.redHeart {
+    /* background-image: url(); */
+    color: red;
 }
 
 .image-post {
@@ -326,5 +334,19 @@ input[type="color"]:focus,
     align-items: center;
     font-family: "Helvetica Neue", sans-serif;
     font-size: 12px;
+    /* border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; */
     /* z-index: 10; */
+}
+
+@media only screen and (max-width:768px) {
+    .grid-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .grid-item {
+        width: calc(100%);
+    }
 }
