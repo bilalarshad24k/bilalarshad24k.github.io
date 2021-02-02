@@ -432,7 +432,16 @@ post-footer-icons:hover {
 
 /*Mobile View*/
 
+@media only screen and (min-width:992px) {
+    .bannerHeading {
+        font-size: 40px !important;
+    }
+}
+
 @media only screen and (max-width:768px) {
+    .bannerHeading {
+        font-size: 30px !important;
+    }
     .grid-item {
         width: calc(50% - 20px);
     }
@@ -445,6 +454,9 @@ post-footer-icons:hover {
 }
 
 @media only screen and (max-width:576px) {
+    .bannerHeading {
+        font-size: 20px !important;
+    }
     .grid-item {
         width: calc(100% - 20px);
         margin-left: 10px;
