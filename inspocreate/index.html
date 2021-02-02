@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="slick/slick-theme.css" />
     <!-- Font Awesome Pro Icons -->
     <link href="https://kit-pro.fontawesome.com/releases/v5.15.2/css/pro.min.css" rel="stylesheet">
+    <!--Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
@@ -38,9 +40,7 @@
                         <div class="searchBox input-group shadow-sm">
                             <input type="search" class="form-control" placeholder="Try Women Empowerment">
                             <div class="input-group-append">
-                                <span class="input-group-text search_icon btn">
-                                    <i class="fas fa-search"></i>
-                                </span>
+                                <span class="input-group-text search_icon btn"><span class="material-icons search">search</span> </span>
                             </div>
                         </div>
                     </form>
@@ -69,7 +69,7 @@
                 </a>
                 <button class="navbar-toggler togbtn" type="button" data-toggle="collapse"
                     data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon togicon mt-2 px-1 py-1"><i class="fas fa-bars"></i></span>
+                    <span class="navbar-toggler-icon togicon mt-2 px-1 py-1"><i class="far fa-bars"></i></span>
                 </button>
 
                 <div class="collapse navbar-collapse d-flex align-items-center flex-wrap" id="collapsibleNavbar">
@@ -117,41 +117,40 @@
                     <h4 class="text-center font-weight-light">To be the Best Version Of Themselves</h4>
                 </div>
                 <div class="slickSlider col-sm-12 px-5" dir="ltr">
-
-                    <button type="button " class="btn item categItem my-1 ">
+                    <button type="button" data-id="1" class="btn item categItem my-1 ">
                         <p>Business</p>
                     </button>
-                    <button type="button " class="btn item categItem my-1 ">
+                    <button type="button" data-id="2" class="btn item categItem my-1 ">
                         <p>Empowerment</p>
                     </button>
-                    <button type="button " class="btn item categItem my-1 ">
+                    <button type="button" data-id="3" class="btn item categItem my-1 ">
                         <p>Life Style</p>
                     </button>
-                    <button type="button " class="btn item categItem my-1 ">
+                    <button type="button" data-id="4" class="btn item categItem my-1 ">
                         <p>Confident</p>
                     </button>
-                    <button type="button " class="btn item categItem my-1 ">
+                    <button type="button" data-id="5" class="btn item categItem my-1 ">
                         <p>Fashion</p>
                     </button>
-                    <button type="button " class="btn item categItem my-1 ">
+                    <button type="button" data-id="6" class="btn item categItem my-1 ">
                         <p>Office Dress</p>
                     </button>
-                    <button type="button " class="btn item categItem my-1 ">
+                    <button type="button" data-id="7" class="btn item categItem my-1 ">
                         <p>Infotainment</p>
                     </button>
-                    <button type="button " class="btn item categItem my-1 ">
+                    <button type="button" data-id="8" class="btn item categItem my-1 ">
                         <p>Success</p>
                     </button>
-                    <button type="button " class="btn item categItem my-1 ">
+                    <button type="button" data-id="9" class="btn item categItem my-1 ">
                         <p>Women Empowerment</p>
                     </button>
-                    <button type="button " class="btn item categItem my-1 ">
+                    <button type="button" data-id="10" class="btn item categItem my-1 ">
                         <p>Women Role</p>
                     </button>
-                    <button type="button " class="btn item categItem my-1 ">
+                    <button type="button" data-id="11" class="btn item categItem my-1 ">
                         <p>Supportive Approach</p>
                     </button>
-                    <button type="button " class="btn item categItem my-1 ">
+                    <button type="button" data-id="1" class="btn item categItem my-1 ">
                         <p>Society Role</p>
                     </button>
                 </div>
@@ -166,14 +165,14 @@
     <!----------------------------------------------------------------------------------->
     <div class="container">
         <div class="row d-flex justify-content-center tabSection">
-            <div class="tab in-activ-tab">
-                <span>Trending</span>
+            <div class="tab activ-tab">
+                Trending
             </div>
-            <div class="tab in-activ-tab">
-                <span>Latest</span>
+            <div class="tab">
+                Latest
             </div>
-            <div class="tab in-activ-tab">
-                <span>Company</span>
+            <div class="tab">
+                Company
             </div>
         </div>
     </div>
@@ -243,15 +242,13 @@
                         <div class="author">
                             <span class="image">Author Name</span>
                         </div>
-                        <div class="Add-to-collection">
-                            <span class="addIcon">
-                                <i class="fal fa-plus-circle post-footer-icons"></i>Add to Collection
-                            </span>
+                        <div class="Add-to-collection d-inline-flex justify-content-center align-items-center">
+                            <span class="material-icons circle">add_circle_outline</span>
+                            <span class="addIcon">&nbsp;Add to Collection</span>
                         </div>
-                        <div class="like">
-                            <span class="likeIcon">
-                                <i  class="far heart fa-heart post-footer-icons"></i>Like                
-                            </span>
+                        <div class="like d-inline-flex justify-content-center align-items-center">
+                            <i class="far fa-heart heart post-footer-icons"></i>
+                            <span class="likeText">&nbsp;Like</span>
                         </div>
                     </div>
                 </div>
@@ -261,20 +258,19 @@
             <div class="image-post">
                 <img class="img-fluid" src="Media/10 (1).jpg" alt="First Image">
                 <div class="overlay">
-                    <a href="https:pexels.com"></a>
+                    <a class="post-link" href="https:pexels.com"></a>
                     <div class="post-footer">
                         <div class="author">
                             <span class="image">Author Name</span>
                         </div>
-                        <div class="Add-to-collection">
-                            <span class="addIcon">
-                                <i class="fal fa-plus-circle post-footer-icons"></i>Add to Collection
-                            </span>
+                        <div class="Add-to-collection d-inline-flex justify-content-center align-items-center">
+                            <span class="material-icons circle">add_circle_outline</span>
+
+                            <span class="addIcon">&nbsp;Add to Collection</span>
                         </div>
-                        <div class="like">
-                            <span class="likeIcon">
-                                <i  class="far heart fa-heart post-footer-icons"></i>Like                
-                            </span>
+                        <div class="like d-inline-flex justify-content-center align-items-center">
+                            <i class="far fa-heart heart post-footer-icons"></i>
+                            <span class="likeText">&nbsp;Like</span>
                         </div>
                     </div>
                 </div>
@@ -284,20 +280,18 @@
             <div class="image-post">
                 <img class="img-fluid" src="Media/10 (2).jfif" alt="First Image">
                 <div class="overlay">
-                    <a href="https:pexels.com"></a>
+                    <a class="post-link" href="https:pexels.com"></a>
                     <div class="post-footer">
                         <div class="author">
                             <span class="image">Author Name</span>
                         </div>
-                        <div class="Add-to-collection">
-                            <span class="addIcon">
-                                <i class="fal fa-plus-circle post-footer-icons"></i>Add to Collection
-                            </span>
+                        <div class="Add-to-collection d-inline-flex justify-content-center align-items-center">
+                            <span class="material-icons circle">add_circle_outline</span>
+                            <span class="addIcon">&nbsp;Add to Collection</span>
                         </div>
-                        <div class="like">
-                            <span class="likeIcon">
-                                <i  class="far heart fa-heart post-footer-icons"></i>Like                
-                            </span>
+                        <div class="like d-inline-flex justify-content-center align-items-center">
+                            <i class="far fa-heart heart post-footer-icons"></i>
+                            <span class="likeText">&nbsp;Like</span>
                         </div>
                     </div>
                 </div>
@@ -307,19 +301,18 @@
             <div class="image-post">
                 <img class="img-fluid" src="Media/10 (8).jpg" alt="First Image">
                 <div class="overlay">
+                    <a class="post-link" href="https:pexels.com"></a>
                     <div class="post-footer">
                         <div class="author">
                             <span class="image">Author Name</span>
                         </div>
-                        <div class="Add-to-collection">
-                            <span class="addIcon">
-                                <i class="fal fa-plus-circle post-footer-icons"></i>Add to Collection
-                            </span>
+                        <div class="Add-to-collection d-inline-flex justify-content-center align-items-center">
+                            <span class="material-icons circle">add_circle_outline</span>
+                            <span class="addIcon">&nbsp;Add to Collection</span>
                         </div>
-                        <div class="like">
-                            <span class="likeIcon">
-                                <i  class="far heart fa-heart post-footer-icons"></i>Like                
-                            </span>
+                        <div class="like d-inline-flex justify-content-center align-items-center">
+                            <i class="far fa-heart heart post-footer-icons"></i>
+                            <span class="likeText">&nbsp;Like</span>
                         </div>
                     </div>
                 </div>
@@ -329,19 +322,18 @@
             <div class="image-post">
                 <img class="img-fluid" src="Media/10 (3).jpg" alt="First Image">
                 <div class="overlay">
+                    <a class="post-link" href="https:pexels.com"></a>
                     <div class="post-footer">
                         <div class="author">
                             <span class="image">Author Name</span>
                         </div>
-                        <div class="Add-to-collection">
-                            <span class="addIcon">
-                                <i class="fal fa-plus-circle post-footer-icons"></i>Add to Collection
-                            </span>
+                        <div class="Add-to-collection d-inline-flex justify-content-center align-items-center">
+                            <span class="material-icons circle">add_circle_outline</span>
+                            <span class="addIcon">&nbsp;Add to Collection</span>
                         </div>
-                        <div class="like">
-                            <span class="likeIcon">
-                                <i  class="far heart fa-heart post-footer-icons"></i>Like                
-                            </span>
+                        <div class="like d-inline-flex justify-content-center align-items-center">
+                            <i class="far fa-heart heart post-footer-icons"></i>
+                            <span class="likeText">&nbsp;Like</span>
                         </div>
                     </div>
                 </div>
@@ -351,19 +343,18 @@
             <div class="image-post">
                 <img class="img-fluid" src="Media/6.jpg" alt="First Image">
                 <div class="overlay">
+                    <a class="post-link" href="https:pexels.com"></a>
                     <div class="post-footer">
                         <div class="author">
                             <span class="image">Author Name</span>
                         </div>
-                        <div class="Add-to-collection">
-                            <span class="addIcon">
-                                <i class="fal fa-plus-circle post-footer-icons"></i>Add to Collection
-                            </span>
+                        <div class="Add-to-collection d-inline-flex justify-content-center align-items-center">
+                            <span class="material-icons circle">add_circle_outline</span>
+                            <span class="addIcon">&nbsp;Add to Collection</span>
                         </div>
-                        <div class="like">
-                            <span class="likeIcon">
-                                <i  class="far heart fa-heart post-footer-icons"></i>Like                
-                            </span>
+                        <div class="like d-inline-flex justify-content-center align-items-center">
+                            <i class="far fa-heart heart post-footer-icons"></i>
+                            <span class="likeText">&nbsp;Like</span>
                         </div>
                     </div>
                 </div>
@@ -373,19 +364,18 @@
             <div class="image-post">
                 <img class="img-fluid" src="Media/8.jpg" alt="First Image">
                 <div class="overlay">
+                    <a class="post-link" href="https:pexels.com"></a>
                     <div class="post-footer">
                         <div class="author">
                             <span class="image">Author Name</span>
                         </div>
-                        <div class="Add-to-collection">
-                            <span class="addIcon">
-                                <i class="fal fa-plus-circle post-footer-icons"></i>Add to Collection
-                            </span>
+                        <div class="Add-to-collection d-inline-flex justify-content-center align-items-center">
+                            <span class="material-icons circle">add_circle_outline</span>
+                            <span class="addIcon">&nbsp;Add to Collection</span>
                         </div>
-                        <div class="like">
-                            <span class="likeIcon">
-                                <i  class="far heart fa-heart post-footer-icons"></i>Like                
-                            </span>
+                        <div class="like d-inline-flex justify-content-center align-items-center">
+                            <i class="far fa-heart heart post-footer-icons"></i>
+                            <span class="likeText">&nbsp;Like</span>
                         </div>
                     </div>
                 </div>
@@ -395,19 +385,18 @@
             <div class="image-post">
                 <img class="img-fluid" src="Media/3.jpg" alt="First Image">
                 <div class="overlay">
+                    <a class="post-link" href="https:pexels.com"></a>
                     <div class="post-footer">
                         <div class="author">
                             <span class="image">Author Name</span>
                         </div>
-                        <div class="Add-to-collection">
-                            <span class="addIcon">
-                                <i class="fal fa-plus-circle post-footer-icons"></i>Add to Collection
-                            </span>
+                        <div class="Add-to-collection d-inline-flex justify-content-center align-items-center">
+                            <span class="material-icons circle">add_circle_outline</span>
+                            <span class="addCollectionText">&nbsp;Add to Collection</span>
                         </div>
-                        <div class="like">
-                            <span class="likeIcon">
-                                <i  class="far heart fa-heart post-footer-icons"></i>Like                
-                            </span>
+                        <div class="like d-inline-flex justify-content-center align-items-center">
+                            <i class="far fa-heart post-footer-icons"></i>
+                            <span class="likeText">&nbsp;Like</span>
                         </div>
                     </div>
                 </div>
@@ -417,20 +406,18 @@
             <div class="image-post">
                 <img class="img-fluid" src="Media/10 (6).jpg" alt="First Image">
                 <div class="overlay">
-                    <a href="https:pexels.com"></a>
+                    <a class="post-link" href="https:pexels.com"></a>
                     <div class="post-footer">
                         <div class="author">
                             <span class="image">Author Name</span>
                         </div>
-                        <div class="Add-to-collection">
-                            <span class="addIcon">
-                                <i class="fal fa-plus-circle post-footer-icons"></i>Add to Collection
-                            </span>
+                        <div class="Add-to-collection d-inline-flex justify-content-center align-items-center">
+                            <span class="material-icons circle">add_circle_outline</span>
+                            <span class="addIcon">&nbsp;Add to Collection</span>
                         </div>
-                        <div class="like">
-                            <span class="likeIcon">
-                                <i  class="far heart fa-heart post-footer-icons"></i>Like                
-                            </span>
+                        <div class="like d-inline-flex justify-content-center align-items-center">
+                            <i class="far fa-heart heart post-footer-icons"></i>
+                            <span class="likeText">&nbsp;Like</span>
                         </div>
                     </div>
                 </div>
@@ -440,20 +427,18 @@
             <div class="image-post">
                 <img class="img-fluid" src="Media/10 (4).jpg" alt="First Image">
                 <div class="overlay">
-                    <a href="https:pexels.com"></a>
+                    <a class="post-link" href="https:pexels.com"></a>
                     <div class="post-footer">
                         <div class="author">
                             <span class="image">Author Name</span>
                         </div>
-                        <div class="Add-to-collection">
-                            <span class="addIcon">
-                                <i class="fal fa-plus-circle post-footer-icons"></i>Add to Collection
-                            </span>
+                        <div class="Add-to-collection d-inline-flex justify-content-center align-items-center">
+                            <span class="material-icons circle">add_circle_outline</span>
+                            <span class="addIcon">&nbsp;Add to Collection</span>
                         </div>
-                        <div class="like">
-                            <span class="likeIcon">
-                                <i  class="far heart fa-heart post-footer-icons"></i>Like                
-                            </span>
+                        <div class="like d-inline-flex justify-content-center align-items-center">
+                            <i class="far fa-heart heart post-footer-icons"></i>
+                            <span class="likeText">&nbsp;Like</span>
                         </div>
                     </div>
                 </div>
@@ -463,26 +448,86 @@
             <div class="image-post">
                 <img class="img-fluid" src="Media/7.jpg" alt="First Image">
                 <div class="overlay">
-                    <a href="https:pexels.com"></a>
+                    <a class="post-link" href="https:pexels.com"></a>
                     <div class="post-footer">
                         <div class="author">
                             <span class="image">Author Name</span>
                         </div>
-                        <div class="Add-to-collection">
-                            <span class="addIcon">
-                                <i class="fal fa-plus-circle post-footer-icons"></i>Add to Collection
-                            </span>
+                        <div class="Add-to-collection d-inline-flex">
+                            <span class="material-icons circle">add_circle_outline</span>
+                            <span>&nbsp;Add to Collection</span>
+
                         </div>
                         <div class="like">
-                            <span class="likeIcon">
-                                <i  class="far heart fa-heart post-footer-icons"></i>Like                
-                            </span>
+                            <i class="far fa-heart heart post-footer-icons liked"></i>
+                            <span class="likeText">&nbsp;<p>Like</p></span>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <!--Load More Button to fetch More Posts-->
+    <div class="container mt-2 mb-5">
+        <div class="row">
+            <button class="d-flex justify-content-center loadMore btn mx-auto border-0">Load More ...</button>
+
+        </div>
+    </div>
+    <!--Footer Settings-->
+    <footer class="container-fluid footer pt-3 px-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mx-auto align-middle">
+                    <a class="navbarBrand" href="index.html"><img class="mt-4" src="Media/logo.png" alt="Inspocreate Logo"></a>
+                </div>
+                <div class="mx-auto col-lg-8">
+                    <div class="footerWidgetsTitle row mt-3">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <b>Useful Links</b>
+                        </div>
+                    </div>
+                    <div class="footerWidgetsLinks row">
+                        <div class="col-lg-4">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="index.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">How It Works</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="index.html">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">Terms Of Service</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="index.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyrights 2020 all rights are reserved</p>
+                </div>
+            </div>
+
+    </footer>
 
 
 

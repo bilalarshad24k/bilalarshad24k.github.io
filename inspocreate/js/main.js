@@ -7,39 +7,75 @@ for (let i = 0; i < x.length; i++) {
 
 
 function styleCategItem(event) {
-    // if (event.currentTarget.classList.contains('styleCategItem')) {
-    //     event.currentTarget.classList.remove('styleCategItem')
-    // } else {
-    //     event.currentTarget.classList.add('styleCategItem')
+    // let id = event.currentTarget.dataset.id;
+    // let matches = document.querySelectorAll('[data-id = "" + id =""]')
+    // if (matches) {
+    //     matches.forEach(match => match.classList.toggle("styleCategItem"));
     // }
-
     event.currentTarget.classList.toggle("styleCategItem")
 }
 
+/* Function To Add a class on a button which is clicked and remove the same class from other buttons   */
 
-//This  Section of code below somehow designs the Tab and defines how the style must change when user click on each tab 
+var tabBtn = document.querySelectorAll(".tab")
+    // tabBtn.forEach(toggleClass)
 
-var y = document.querySelectorAll('.tab');
-for (let i = 0; i < y.length; i++) {
-    y[i].addEventListener('click', assignActivTabClass)
-}
+// function toggleClass(item) {
+//     item.addEventListener("click", addRemoveClass)
+// }
 
-// function assignActivTabClass(event) {
-//     for (let i = 0; i < y.length: i++) {
-//         if (y[i].event.currentTarget.classList.contains("activ-tab")) {
-//             event.currentTarget.classList.remove("activ-tab")
-//             event.currentTarget.classList.add("in-activ-tab")
-//         } else {}
+// function addRemoveClass(event) {
+//     tabBtn.forEach(removeClass)
+
+//     function removeClass(item) {
+//         item.classList.remove("activ-tab")
 //     }
-//     event.currentTarget.classList.add("activ-tab")
+//     event.target.classList.add("activ-tab")
+//     console.log("you pressed tab button")
+// }
+// The above function can also be written in short Format as 
 
-var heart = document.querySelectorAll(".heart");
-console.log(`The Number of heart Emojis in the whole document ${heart.length}`)
+// tabBtn.forEach(function toggleClass(item) {
+//     item.addEventListener("click", function addRemoveClass(e) {
+//         tabBtn.forEach(function removeClass(item) {
+//             item.classList.remove("activ-tab")
+//         })
+//         e.target.classList.add("activ-tab")
+//     })
+// })
 
-for (let i = 0; i < heart.length; i++) {
-    heart[i].addEventListener('click', redLikeButton)
-}
 
-function redLikeButton(event) {
-    event.currentTarget.classList.toggle('redHeart')
-}
+//And this function can also written in this way too 
+tabBtn.forEach(function(item) {
+    item.addEventListener("click", (event) => {
+        tabBtn.forEach(function(item) {
+            item.classList.remove("activ-tab")
+        })
+        event.target.classList.add("activ-tab")
+    })
+})
+
+
+
+// Block of code which changes the color of post-footer-like button
+
+// var heart = document.querySelectorAll(".far");
+// heart.forEach(function toggleClass(item) {
+//         item.addEventListener("click", function opaqueLikeButton(event) {
+//             event.target.classList.toggle("fas")
+//         })
+//     })
+var likeBtn = document.querySelectorAll(".like");
+likeBtn.forEach(function toggleClass(item) {
+    item.addEventListener("click", function(event) {
+        // likeBtn.forEach(function checkChildClass(element) {
+        //         element = event.target.classList.find("far")
+        //     }
+        console.log(event);
+        var el = event.currentTarget.querySelector('.far')
+        el.classList.toggle('fas')
+
+
+    })
+
+})

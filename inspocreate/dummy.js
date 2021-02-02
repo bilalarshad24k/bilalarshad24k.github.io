@@ -1,13 +1,15 @@
-var heart = document.querySelectorAll(".heart");
-console.log(`The number of Heart Emojis in this webpages are ${heart.length}`)
+var heart = document.querySelectorAll(".far.fa-heart");
 
+heart.forEach(function toggleClass(item) {
+    item.addEventListener("click", function addRemoveLikedClass(event) {
+        event.target.classList.toggle("fas")
+            // if (event.target.classList.contains("fas")) {
+            //     event.target.classList.remove("fas")
+            //     event.target.classList.add("far")
+            // } else {
+            //     event.target.classList.remove("far")
+            //     event.target.classList.add("fas")
 
-for (let i = 0; i < heart.length; i++) {
-    heart[i].addEventListener('click', filledHeartButton)
-}
-
-function filledHeartButton(event) {
-    event.currentTarget.classList.toggle('redHeart')
-}
-
-console.log(`Hello World`)
+        // }
+    })
+})

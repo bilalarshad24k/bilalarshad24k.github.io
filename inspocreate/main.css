@@ -9,6 +9,14 @@ In this file Some Default Bootstrap rules are being override */
     box-sizing: border-box;
 }
 
+:root {
+    --primaryColor: #7f6aee;
+    --buttonHoverColor: rgba(127, 106, 238, .9);
+    --footerBackgroundColor: #faf6f7;
+    --theme-font-light: #5c5f64;
+    --darkFontColor: #101727;
+}
+
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -45,6 +53,11 @@ input[type="color"]:focus,
 .searchBox {
     width: 90% !important;
     max-width: 100% !important;
+}
+
+.search {
+    font-size: 22px !important;
+    color: #000;
 }
 
 .log {
@@ -145,7 +158,7 @@ input[type="color"]:focus,
     gap: 30px;
 }
 
-.in-activ-tab span {
+.tab {
     color: #5c5f64;
     text-align: center;
     font-weight: 300;
@@ -154,7 +167,10 @@ input[type="color"]:focus,
     padding-bottom: 15px;
 }
 
-.activ-tab span {
+.activ-tab {
+    background-image: url(Media/bottom-wave.f1320a7e.svg);
+    background-repeat: repeat-x;
+    background-position: 0 100%;
     color: #101727;
     font-weight: 700;
     font-size: 24px;
@@ -254,7 +270,7 @@ input[type="color"]:focus,
     position: relative;
     margin-bottom: 20px;
     float: left;
-    background: #D26;
+    /* background: transparent; */
     overflow: hidden;
     /* border: 2px solid #333;
     border-color: hsla(0, 0%, 0%, 0.5); */
@@ -269,9 +285,18 @@ input[type="color"]:focus,
 /* Design of Icons  */
 
 .post-footer-icons {
-    margin: 0 5px;
-    font-size: 12px;
     cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+    font-size: 12px;
+}
+
+.circle {
+    font-size: 16px !important;
+}
+
+post-footer-icons:hover {
+    color: #000;
 }
 
 .redHeart {
@@ -328,7 +353,7 @@ input[type="color"]:focus,
     bottom: 0;
     width: 100%;
     background: #fff !important;
-    height: 50px;
+    height: 45px;
     display: inline-flex;
     justify-content: space-evenly;
     align-items: center;
@@ -339,14 +364,89 @@ input[type="color"]:focus,
     /* z-index: 10; */
 }
 
+.Add-to-collection,
+.like {
+    color: var(--theme-font-light);
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.Add-to-collection:hover,
+.like:hover {
+    color: #000;
+}
+
+.like {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fas {
+    color: red;
+}
+
+.loadMore {
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+.loadMore:hover {
+    background-color: var(--buttonHoverColor);
+    color: white;
+}
+
+
+/*Footer Styling*/
+
+.footer {
+    background-color: var(--footerBackgroundColor);
+}
+
+.footerWidgetsTitle {
+    color: var(--darkFontColor);
+    font-size: 14px;
+    line-height: 2.57;
+}
+
+.footerWidgetsLinks li {
+    padding-bottom: 12px;
+}
+
+.footerWidgetsLinks a {
+    text-decoration: none;
+    color: #1d2124;
+}
+
+
+/* .links {
+    background-color: grey;
+} */
+
+.links a {
+    color: var(--darkFontColor);
+    text-decoration: none;
+}
+
+
+/*Mobile View*/
+
 @media only screen and (max-width:768px) {
     .grid-item {
         width: calc(50% - 20px);
     }
 }
 
+@media only screen and (max-width: 690px) {
+    .deskHead {
+        display: none;
+    }
+}
+
 @media only screen and (max-width:576px) {
     .grid-item {
-        width: calc(100%);
+        width: calc(100% - 20px);
+        margin-left: 10px;
     }
 }
