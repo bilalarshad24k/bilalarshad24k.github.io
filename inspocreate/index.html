@@ -111,41 +111,60 @@
     <div class="modal-box">
         <div class="modal-dialogue">
             <div class="modal-content">
-                <div class="modal-dialogue-close-button">
+                <div class="modal-dialog-close-button">
                     <span class="material-icons">
-                        close
-                    </span>
+                            close
+                        </span>
                 </div>
                 <div class="modal-login-box-title">
                     Login
                 </div>
-                <div class="modal-box-social-login-buttons">
-                    <button type="button" class="btn social-button facebook-login-button shadow-lg">
-                        <div class="fb-login-icon">
-                            <i class="fab fa-facebook-f"></i>
+                <div class="modal-login-box-body border border-danger">
+                    <div class="modal-login-box-body-container py-2">
+                        <div class="row no-gutter">
+                            <div class="col-lg-6 p-0 border border-warning pr-lg-2 py-1 py-lg-0">
+                                <button type="button" class="btn btn-block social-button facebook-login-button shadow-lg">
+                                        <span class="fb-login-icon">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </span>
+                                        <span class="fb-login-text">
+                                            &nbsp;&nbsp;Login With Facebook
+                                        </span>                        
+                                        </button>
+                            </div>
+                            <div class="col-lg-6 p-0 border border-warning pl-lg-2 py-1 py-lg-0">
+                                <button type="button" class="btn btn-block social-button google-login-button shadow-lg">
+                                        <span class="google-login-icon">
+                                            <i class="fab fa-google"></i>              
+                                        </span>
+                                        <span class="google-login-text">
+                                            &nbsp;&nbsp;Login With Google
+                                        </span>                        
+                                        </button>
+                            </div>
+
                         </div>
-                        <div class="fb-login-text">
-                            Login With Facebook
-                        </div>                        
-                        </button>
-                    <button type="button" class="btn social-button google-login-button shadow-lg">
-                            <div class="google-login-icon">
-                                <i class="fab fa-google"></i>              
-                              </div>
-                            <div class="fb-login-text">
-                                Login With Google
-                            </div>                        
-                            </button>
+                        <div class="row">
+                            <div class="col-lg-12 p-0">
+                                <div class="divider-box">
+                                    <span class="divider-text">OR</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+
 
     <!-- Second Row Containing the Categories Slider -->
 
 
 
-    <div class="container-fluid shadow-sm section1">
+    <div class="container-fluid shadow-sm">
         <div class="container">
             <div class="row row1 d-flex justify-content-center categSection">
                 <div class="col-sm-12 d-flex my-5 flex-column">
@@ -199,7 +218,7 @@
 
     <!-- Here We Are Starting Third Row which contains tabs and these tabs contains posts based on categories,when the user selects the categories the posts in tabs are shown on the base of these categories in tab-->
     <!----------------------------------------------------------------------------------->
-    <div class="container section2">
+    <div class="container">
         <div class="row d-flex justify-content-center tabSection">
             <div class="tab activ-tab">
                 Trending
@@ -212,63 +231,10 @@
             </div>
         </div>
     </div>
-    <!-- The section of code below is the  masonry Section using masonry.js library -->
 
+    <!--In the section of code below, for posts in masonry style we have impplemeted Masonry.js plugin Read Documenetation of Masonry.js--->
 
-    <!-- <div class="container grid-container">
-        <div class="grid-box">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a dui efficitur, iaculis augue id, posuere elit. Mauris bibendum turpis ut euismod imperdiet. Vivamus bibendum nisl ornare, dapibus enim a, malesuada magna. Maecenas feugiat nisi quis enim blandit,
-                at sodales lacus ultricies. Nam lacus ante, lacinia ut lectus id, condimentum.
-            </p>
-
-        </div>
-        <div class="grid-box">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a dui efficitur, iaculis augue id, posuere elit. Mauris bibendum turpis ut euismod imperdiet. Vivamus bibendum nisl ornare, dapibus enim a, malesuada magna. Maecenas feugiat nisi quis enim blandit,
-                at sodales lacus ultricies. Nam lacus ante, lacinia ut lectus id, condimentum.
-            </p>
-        </div>
-        <div class="grid-box">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec sagittis neque, non eleifend neque. Nam ac volutpat sem. Donec imperdiet erat orci, a rhoncus.
-            </p>
-        </div>
-        <div class="grid-box">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec sagittis neque, non eleifend neque. Nam ac volutpat sem. Donec imperdiet erat orci, a rhoncus. </p>
-        </div>
-        <div class="grid-box">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a dui efficitur, iaculis augue id, posuere elit. Mauris bibendum turpis ut euismod imperdiet. Vivamus bibendum nisl ornare, dapibus enim a, malesuada magna. Maecenas feugiat nisi quis enim blandit,
-                at sodales lacus ultricies. Nam lacus ante, lacinia ut lectus id, condimentum.
-            </p>
-        </div>
-        <div class="grid-box">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec sagittis neque, non eleifend neque. Nam ac volutpat sem. Donec imperdiet erat orci, a rhoncus.
-            </p>
-        </div>
-        <div class="grid-box">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a dui efficitur, iaculis augue id, posuere elit. Mauris bibendum turpis ut euismod imperdiet. Vivamus bibendum nisl ornare, dapibus enim a, malesuada magna. Maecenas feugiat nisi quis enim blandit,
-                at sodales lacus ultricies. Nam lacus ante, lacinia ut lectus id, condimentum.
-            </p>
-        </div>
-        <div class="grid-box">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec sagittis neque, non eleifend neque. Nam ac volutpat sem. Donec imperdiet erat orci, a rhoncus.
-            </p>
-        </div>
-        <div class="grid-box">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a dui efficitur, iaculis augue id, posuere elit. Mauris bibendum turpis ut euismod imperdiet. Vivamus bibendum nisl ornare, dapibus enim a, malesuada magna. Maecenas feugiat nisi quis enim blandit,
-                at sodales lacus ultricies. Nam lacus ante, lacinia ut lectus id, condimentum.
-            </p>
-        </div>
-    </div> -->
-    <!--In the section of code below, Masonry.js plugin is implemented --->
-
-    <div class="grid section3">
+    <div class="grid">
         <div class="grid-item">
             <div class="image-post">
                 <img class="img-fluid" src="Media/1.jpg" alt="First Image">
@@ -507,14 +473,14 @@
 
 
     <!--Load More Button to fetch More Posts-->
-    <div class="container mt-2 mb-5 section4">
+    <div class="container mt-2 mb-5">
         <div class="row">
             <button class="d-flex justify-content-center loadMore btn mx-auto border-0">Load More ...</button>
 
         </div>
     </div>
     <!--Footer Settings-->
-    <footer class="container-fluid footer pt-3 px-5 section5">
+    <footer class="container-fluid footer pt-3 px-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mx-auto align-middle">
