@@ -51,7 +51,7 @@
                     <nav class="navbar-expand-sm">
                         <ul class="d-flex align-items-center navbar-nav mw-100">
                             <li class="nav-item">
-                                <a class="btn nav-link" href="#">
+                                <a id="popUpTriggerButton" class="btn nav-link" href="#">
                                     <img src="Media/Shape.png" class="mb-1"> Login
                                 </a>
                             </li>
@@ -60,10 +60,8 @@
                                     Community</button>
                             </li>
                         </ul>
+                    </nav>
                 </div>
-                </li>
-                </ul>
-                </nav>
             </div>
             <!-- <nav class="navbar navbar-expand-md">
                 <a class="navbar-brand mw-100" href="inspo.html">
@@ -107,22 +105,22 @@
     <!-- This marks the End of setting For Our Header For Desktop, We still have to style header for mobile -->
 
     <!-- PopUp For Login-->
-    <div class="fade modal-backdrop show"></div>
-    <div class="modal-box">
+    <div class="fade modal-backdrop invisible"></div>
+    <div class="modal-box invisible">
         <div class="modal-dialogue">
             <div class="modal-content">
                 <div class="modal-dialog-close-button">
-                    <span class="material-icons">
+                    <span id="popUpHide" class="material-icons modal-close">
                             close
                         </span>
                 </div>
                 <div class="modal-login-box-title">
                     Login
                 </div>
-                <div class="modal-login-box-body border border-danger">
+                <div class="modal-login-box-body">
                     <div class="modal-login-box-body-container py-2">
-                        <div class="row no-gutter">
-                            <div class="col-lg-6 p-0 border border-warning pr-lg-2 py-1 py-lg-0">
+                        <div class="row">
+                            <div class="col-lg-6 p-0 pr-lg-2 py-1 py-lg-0">
                                 <button type="button" class="btn btn-block social-button facebook-login-button shadow-lg">
                                         <span class="fb-login-icon">
                                             <i class="fab fa-facebook-f"></i>
@@ -132,7 +130,7 @@
                                         </span>                        
                                         </button>
                             </div>
-                            <div class="col-lg-6 p-0 border border-warning pl-lg-2 py-1 py-lg-0">
+                            <div class="col-lg-6 p-0 pl-lg-2 py-1 py-lg-0">
                                 <button type="button" class="btn btn-block social-button google-login-button shadow-lg">
                                         <span class="google-login-icon">
                                             <i class="fab fa-google"></i>              
@@ -151,11 +149,43 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form"></div>
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-12 p-0 mt-5">
+                                    <p class="modal-form-title">Login With Email</p>
+                                </div>
+                                <div class="col-lg-12 p-0">
+                                    <div class="form-group modal-login-form-Email-div">
+                                        <label for="email">Email</label>
+                                        <div class="modal-login-form-email-field mt-2">
+                                            <input class="modal-login-form-field modal-login-email-field" id="email" type="email" name="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group modal-form-password-div">
+                                        <label for="password">Password</label>
+                                        <input class="modal-login-form-field modal-login-email-field" type="password" name="password" id="pasword" placeholder="********">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row p-0 mt-5">
+                                <div class="col-lg-6 p-0 pr-1">
+                                    <img src="Media/google-recaptcha-ui.jpg" alt="Recaptcha-Image" style="width:100%;">
+                                </div>
+                                <div class="col-lg-6 p-0">
+                                    <button class="btn btn-block modal-login-form-button">Continue</button>
+                                </div>
+                            </div>
+                            <div class="text-center d-flex-inline justify-content-center align-items-center w-100 mt-5 mb-3">
+                                <span>Forgor Password?&nbsp;&nbsp;</span>
+                                <span class="btn-link" style="cursor:pointer">Reset</span>
+                            </div>
+                        </form>
                     </div>
+
                 </div>
             </div>
         </div>
+    </div>
     </div>
     </div>
 
@@ -560,6 +590,8 @@
     <!--jQuery script -->
     <!--------------------------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js " integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin=" anonymous "></script>
+
+
     <!--------------------------------->
     <!-- slick carousel js script -->
     <!--------------------------------->

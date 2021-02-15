@@ -79,3 +79,26 @@ likeBtn.forEach(function toggleClass(item) {
     })
 
 })
+
+// document.getElementById("popUpTriggerButton").addEventListener("click", popUpTrigger);
+
+var signInButton = document.getElementById("popUpTriggerButton");
+signInButton.addEventListener("click", popUpTrigger)
+
+function popUpTrigger() {
+    document.querySelector(".modal-backdrop").classList.remove('invisible')
+    document.querySelector(".modal-backdrop").classList.add('visible')
+    document.querySelector(".modal-box").classList.remove('invisible')
+    document.querySelector(".modal-box").classList.add('visible')
+}
+
+var popUpHide = document.getElementById("popUpHide");
+popUpHide.addEventListener("click", closeLoginPopUp)
+
+function closeLoginPopUp() {
+
+    document.querySelector(".modal-backdrop").classList.remove('visible')
+    document.querySelector(".modal-backdrop").classList.add('invisible')
+    document.querySelector(".modal-box").classList.remove('visible')
+    document.querySelector(".modal-box").classList.add('invisible')
+}
