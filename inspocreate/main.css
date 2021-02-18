@@ -560,6 +560,8 @@ post-footer-icons:hover {
     height: 100%;
     outline: 0;
     z-index: 1050;
+    overflow-x: hidden;
+    overflow-y: auto;
     transition: opacity .15s linear;
 }
 
