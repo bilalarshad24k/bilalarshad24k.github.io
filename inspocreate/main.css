@@ -57,7 +57,7 @@ input[type="color"]:focus,
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #5c5f64;
+    background: rgba(0, 0, 0, .5);
     cursor: pointer;
 }
 
@@ -94,6 +94,20 @@ div.modal-box::-webkit-scrollbar-thumb:hover {
     color: #000;
 }
 
+.signInButton {
+    display: inline-flex;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.signInButton:hover {
+    color: #101727 !important;
+}
+
+.lock-icon {
+    font-size: 20px !important;
+}
+
 .log {
     padding-top: 10px !important;
 }
@@ -122,6 +136,10 @@ div.modal-box::-webkit-scrollbar-thumb:hover {
 .btn:focus {
     outline: none;
     box-shadow: none;
+}
+
+.noscroll {
+    overflow: hidden;
 }
 
 
@@ -491,16 +509,6 @@ post-footer-icons:hover {
     }
 }
 
-
-/* To add margin on left-side of posts on medium screens */
-
-
-/* @media only screen and (max-width:1200px) {
-    .grid-item {
-
-    }
-} */
-
 @media only screen and (max-width:576px) {
     .bannerHeading {
         font-size: 20px !important;
@@ -535,13 +543,14 @@ post-footer-icons:hover {
     background-color: #000;
 }
 
-.modal-backdrop.fade {
+.modal-backdrop.fade,
+.modal-box.fade {
     opacity: 0.3;
 }
 
 .modal-box {
-    display: flex;
-    justify-content: center;
+    display: block;
+    /* justify-content: center; */
     padding-left: 10px;
     position: absolute;
     left: 0;
@@ -551,8 +560,11 @@ post-footer-icons:hover {
     height: 100%;
     outline: 0;
     z-index: 1050;
-    overflow-x: hidden;
-    overflow-y: auto;
+    transition: opacity .15s linear;
+}
+
+.modal-dialogue {
+    transition: transform 1s ease-out;
 }
 
 .modal-dialogue {
@@ -712,9 +724,15 @@ post-footer-icons:hover {
 
 /*Modal styling for medium and smaller devices*/
 
-@media only screen and (min-width:380px) {
+@media only screen and (max-width: 767px) {
+    .modal-login-box-body-container {
+        padding: 0px 20px !important;
+    }
+}
+
+@media only screen and (min-width:300px) {
     .modal-dialogue {
-        margin: 1.75rem 0;
+        margin: 0 auto;
     }
 }
 

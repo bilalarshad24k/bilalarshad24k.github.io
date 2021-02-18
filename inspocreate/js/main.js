@@ -84,12 +84,14 @@ likeBtn.forEach(function toggleClass(item) {
 
 var signInButton = document.getElementById("popUpTriggerButton");
 signInButton.addEventListener("click", popUpTrigger)
+var body = document.body
 
 function popUpTrigger() {
     document.querySelector(".modal-backdrop").classList.remove('invisible')
     document.querySelector(".modal-backdrop").classList.add('visible')
     document.querySelector(".modal-box").classList.remove('invisible')
     document.querySelector(".modal-box").classList.add('visible')
+    body.classList.toggle('noscroll')
 }
 
 var popUpHide = document.getElementById("popUpHide");
