@@ -178,6 +178,33 @@ div.modal-box::-webkit-scrollbar-thumb:hover {
     box-shadow: 0 6px 10px 0 rgba(131, 134, 163, .2) !important;
 }
 
+.list-slick {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    transform: translateZ(0);
+}
+
+.list-slick:before,
+.list-slick:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 110px;
+    height: calc(100% - 20px);
+    z-index: 1;
+}
+
+.list-slick:before {
+    left: 15px;
+    background-image: linear-gradient( to right, #fff 20%, hsla(0, 0%, 100%, 0));
+}
+
+.list-slick:after {
+    right: 15px;
+    background-image: linear-gradient( to right, hsla(0, 0%, 100%, 0), #fff 80%);
+}
+
 
 /*the section below will select the before pseudo element of "p" in focus state of element with class of "categItem" */
 
@@ -232,6 +259,9 @@ div.modal-box::-webkit-scrollbar-thumb:hover {
     font-size: 24px;
     cursor: pointer;
 }
+
+
+/* masonry using  grid-template-rows:masonry only for firefox*/
 
 
 /* .defined {
@@ -543,8 +573,8 @@ post-footer-icons:hover {
     background-color: #000;
 }
 
-.modal-backdrop.fade,
-.modal-box.fade {
+.modal-backdrop.faded,
+.modal-box.faded {
     opacity: 0.3;
 }
 
@@ -565,8 +595,8 @@ post-footer-icons:hover {
     transition: opacity .15s linear;
 }
 
-.modal-dialogue {
-    transition: transform 1s ease-out;
+.modal-box.modal-dialogue {
+    transition: opacity 2s ease-out;
 }
 
 .modal-dialogue {
@@ -584,6 +614,7 @@ post-footer-icons:hover {
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
+    overflow: auto;
 }
 
 .modal-dialog-close-button {
