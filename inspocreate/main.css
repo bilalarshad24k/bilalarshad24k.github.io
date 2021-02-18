@@ -205,6 +205,20 @@ div.modal-box::-webkit-scrollbar-thumb:hover {
     background-image: linear-gradient( to right, hsla(0, 0%, 100%, 0), #fff 80%);
 }
 
+@media only screen and (max-width:576px) {
+    .list-slick:before,
+    .list-slick:after {
+        width: 35px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .list-slick:before,
+    .list-slick:after {
+        width: 50px;
+    }
+}
+
 
 /*the section below will select the before pseudo element of "p" in focus state of element with class of "categItem" */
 
@@ -563,7 +577,7 @@ post-footer-icons:hover {
     display: block;
 }
 
-.modal-backdrop {
+.modal-background {
     position: fixed;
     top: 0;
     left: 0;
@@ -573,7 +587,7 @@ post-footer-icons:hover {
     background-color: #000;
 }
 
-.modal-backdrop.faded,
+.modal-background.faded,
 .modal-box.faded {
     opacity: 0.3;
 }
@@ -605,7 +619,7 @@ post-footer-icons:hover {
     margin-top: 100px !important;
 }
 
-.modal-content {
+.login-modal-content {
     width: 100%;
     position: relative;
     display: flex;
@@ -737,7 +751,7 @@ post-footer-icons:hover {
     color: #101727;
 }
 
-.modal-login-form-field {
+.modal-form-field {
     width: 100%;
     height: 57px;
     border-radius: 2px important;
@@ -778,5 +792,44 @@ post-footer-icons:hover {
 @media only screen and (max-width:767px) {
     .modal-login-box-body-container {
         padding: 0px;
+    }
+}
+
+
+/*Settings For SignUp Modal/ Modal For Join OUr Community*/
+
+.signUpModalDialog {
+    margin-top: 100px;
+    width: 571px;
+    max-width: 100%;
+}
+
+.signUpModal-radioButton {
+    font-family: "Helvetica Neue", sans-serif!important;
+    font-size: 22px;
+    object-fit: contain!important;
+    border-radius: 2px!important;
+    box-shadow: 0 6px 10px 0 rgb(131 134 163 / 12%);
+    border: 1px solid #e0e3e7;
+    background-color: #fff;
+    vertical-align: middle!important;
+    padding: 12px 5px!important;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    cursor: pointer;
+    grid-gap: 5px;
+    gap: 5px;
+}
+
+.signUpModalContainer {
+    padding: 0 71px;
+    width: 100%;
+}
+
+@media only screen and (max-width:767px) {
+    .signUpModalContainer {
+        padding: 0 15px;
     }
 }

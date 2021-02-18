@@ -87,8 +87,8 @@ signInButton.addEventListener("click", popUpTrigger)
 var body = document.body
 
 function popUpTrigger() {
-    document.querySelector(".modal-backdrop").classList.remove('invisible')
-    document.querySelector(".modal-backdrop").classList.add('visible')
+    document.querySelector(".modal-background").classList.remove('invisible')
+    document.querySelector(".modal-background").classList.add('visible')
     document.querySelector(".modal-box").classList.remove('invisible')
     document.querySelector(".modal-box").classList.add('visible')
     body.classList.toggle('noscroll')
@@ -99,8 +99,8 @@ popUpHide.addEventListener("click", closeLoginPopUp)
 
 function closeLoginPopUp() {
 
-    document.querySelector(".modal-backdrop").classList.remove('visible')
-    document.querySelector(".modal-backdrop").classList.add('invisible')
+    document.querySelector(".modal-background").classList.remove('visible')
+    document.querySelector(".modal-background").classList.add('invisible')
     document.querySelector(".modal-box").classList.remove('visible')
     document.querySelector(".modal-box").classList.add('invisible')
     body.classList.remove('noscroll')

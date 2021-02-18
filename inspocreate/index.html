@@ -62,7 +62,7 @@
                                 </a>
                             </li>
                             <li class="nav-item pl-3">
-                                <button type="button" class="btn btn-community text-white no-outline">Join
+                                <button type="button" data-toggle="modal" data-target="#joinOurCommunityModal" class="btn btn-community text-white no-outline">Join
                                     Community</button>
                             </li>
                         </ul>
@@ -110,11 +110,11 @@
     </div>
     <!-- This marks the End of setting For Our Header For Desktop, We still have to style header for mobile -->
 
-    <!-- Modal For Login-->
-    <div class="faded modal-backdrop invisible"></div>
+    <!-- Modal For SignIn/Login-->
+    <div class="faded modal-background invisible"></div>
     <div class="modal-box invisible">
         <div class="modal-dialogue">
-            <div class="modal-content">
+            <div class="login-modal-content">
                 <div class="modal-dialog-close-button">
                     <span id="popUpHide" class="material-icons modal-close">
                             close
@@ -164,12 +164,12 @@
                                     <div class="form-group modal-login-form-Email-div">
                                         <label for="email">Email</label>
                                         <div class="modal-login-form-email-field mt-2">
-                                            <input class="modal-login-form-field modal-login-email-field" id="email" type="email" name="email" placeholder="Email">
+                                            <input class="modal-form-field modal-login-email-field" id="email" type="email" name="email" placeholder="Email">
                                         </div>
                                     </div>
                                     <div class="form-group modal-form-password-div">
                                         <label for="password">Password</label>
-                                        <input class="modal-login-form-field modal-login-email-field" type="password" name="password" id="pasword" placeholder="********">
+                                        <input class="modal-form-field modal-login-email-field" type="password" name="password" id="pasword" placeholder="********">
                                     </div>
                                 </div>
                             </div>
@@ -187,19 +187,151 @@
                             </div>
                         </form>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
     </div>
     </div>
-    <!--PopUp For  Join Our Community-->
+    <!--Modal For  Join Our Community-->
+    <div id="joinOurCommunityModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog signUpModalDialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <div class="modal-title text-left py-3 w-100">
+                        <h3 class="text-center">Join Our Community</h3>
+                    </div>
+                    <button type="button" style="outline:none;" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="material-icons">
+                            close
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="signUpModalContainer">
+                            <div class="row">
+                                <div class="col-lg-6 p-0 pr-lg-2">
+                                    <div class="signUpModal-radioButton">
+                                        <span class="material-icons">
+                                            person_pin
+                                            </span>
+                                        <span>Individual</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 p-0 pr-lg-2">
+                                    <div class="signUpModal-radioButton">
+                                        <span class="material-icons">
+                                            batch_prediction
+                                            </span>
+                                        <span>Company</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 p-0">
+                                    <div class="divider-box">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col-lg-6 p-0 pr-lg-2">
+                                    <button type="button" class="btn btn-block social-button facebook-login-button shadow-lg">
+                                            <span class="fb-login-icon">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </span>
+                                            <span class="fb-login-text">
+                                                &nbsp;Login With Facebook
+                                            </span>                        
+                                            </button>
+                                </div>
+                                <div class="col-lg-6 p-0 pl-lg-2">
+                                    <button type="button" class="btn btn-block social-button google-login-button shadow-lg">
+                                            <span class="google-login-icon">
+                                                <i class="fab fa-google"></i>              
+                                            </span>
+                                            <span class="google-login-text">
+                                                &nbsp;Login With Google
+                                            </span>                        
+                                            </button>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 p-0">
+                                    <div class="divider-box">
+                                        <span class="divider-text">OR</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 p-0 mt-5">
+                                    <p class="modal-form-title">Sign Up With Email</p>
+                                </div>
+                                <div class="col-lg-12 p-0">
+                                    <div class="row">
+                                        <div class="col-lg-6 pr-1">
+                                            <div class="form-group">
+                                                <label for="firstName">First Name</label>
+                                            </div>
+                                            <div class="div">
+                                                <input type="text" id="firstName" name="firstname" class="form-control modal-form-field" placeholder="First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 pl-1">
+                                            <div class="form-group">
+                                                <label for="lastName">Last Name</label>
+                                            </div>
+                                            <div class="div">
+                                                <input type="text" id="lastName" name="lastname" class="form-control modal-form-field" placeholder="Last Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 p-0 mt-3">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="div">
+                                        <input type="email" id="email" name="email" class="form-control modal-form-field" placeholder="Enter Your Email Address">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 p-0 mt-3">
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                    </div>
+                                    <div class="div">
+                                        <input type="password" id="password" name="password" class="form-control modal-form-field" placeholder="********">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row p-0 mt-5">
+                                <div class="col-lg-6 p-0 pr-1">
+                                    <img src="Media/google-recaptcha-ui.jpg" alt="Recaptcha-Image" style="width:100%;">
+                                </div>
+                                <div class="col-lg-6 p-0">
+                                    <button class="btn btn-block modal-login-form-button">Continue</button>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-lg-12 text-center">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="terms-and-conditions">
+                                        <label class="form-check-label" for="terms-and-conditions">I agree 
+                                            <span class="btn-link" style="cursor:pointer">Terms And Conditions</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
     <!-- Second Row Containing the Categories Slider -->
-
-
-
     <div class="container-fluid shadow-sm">
         <div class="container">
             <div class="row row1 d-flex justify-content-center categSection">
@@ -251,6 +383,7 @@
             </div>
         </div>
     </div>
+
     <!-- Some changes needs to be made in second row e.g fade effect on the edges of the Slider right before next and previous buttons-->
 
     <!---------------------------------------------------------------------------------->
