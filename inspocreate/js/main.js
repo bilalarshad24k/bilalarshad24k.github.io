@@ -103,4 +103,5 @@ function closeLoginPopUp() {
     document.querySelector(".modal-backdrop").classList.add('invisible')
     document.querySelector(".modal-box").classList.remove('visible')
     document.querySelector(".modal-box").classList.add('invisible')
+    body.classList.remove('noscroll')
 }
